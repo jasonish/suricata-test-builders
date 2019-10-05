@@ -1,0 +1,5 @@
+*~
+cache
+work
+.vagrant
+.ssh-config
