@@ -86,8 +86,8 @@ elif [ ! -e "${MYDIR}/src/suricata/libhtp" ]; then
 fi
 
 VOLUMES=(
-    -v $(pwd):/work
-    -v $(pwd)/src:/src
+    -v $(pwd):/work:z
+    -v $(pwd)/src:/src:z
 )
 
 if [ "${SURICATA_VERIFY_DIR}" != "" -a -e "${SURICATA_VERIFY_DIR}" ]; then
